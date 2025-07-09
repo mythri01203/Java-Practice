@@ -1,16 +1,14 @@
-class Count
+class main
 {
-public static void main(String args[])
-{
-int start=1,end=100,num=0,count=0;
-while(start<=end)
-{
-num=start;
-if(num%2==0)
-count++;
-start++;
-}
-System.out.println(count);
-
-}
+	public static void main(String args[])
+	{
+	int num=1234,count=0,rem=0;
+	while(num!=0)
+	{
+		rem=num%10;
+		count++;
+		num=num/10;
+	}
+	System.out.println(count);
+	}
 }

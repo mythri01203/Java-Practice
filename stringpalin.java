@@ -1,15 +1,20 @@
-class Mythri
+class Main
 {
 	public static void main(String args[])
- 	{
-		String s="madam";
-		String s1="";
-		for(int x=s.length()-1;x>=0;x--)
+	{
+		String s="a man, a plan a canal 1 panama";
+		String s2="";
+		for(int x=0;x<s.length();x++)
 		{
 			char c=s.charAt(x);
-			s1=s1+c;
+			if(c>='a'&&c<='z')
+			{
+				s2=s2+c;
+			}
 		}
-		System.out.println(s.equals(s1)?"palindrome":"not palindrome");
-		System.out.print(s1);
+		StringBuffer sb=new StringBuffer(s2);
+		StringBuffer s1=sb.reverse();
+		System.out.println(s1);
+		System.out.println((s2.contentEquals(s1))?"palindrome":"not a palindrome");
 	}
 }

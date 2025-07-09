@@ -1,47 +1,32 @@
-class Mythri
+class Main
 {
 	public static void main(String args[])
 	{
-		String s="hello all";
-		int capital=0,small=0,consonant=0,vowels=0,digit=0,symbol=0,space=0;
-		for(int x=0;x<=s.length()-1;x++)
-		{
-			char c=s.charAt(x);
-			if(c>='a'&&c<='z')
-			{
-				small++;
-				if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
-				{
-					vowels++;
-				}
-				else
-				consonant++;
-			}
-			else if(c>='A'&&c<='Z')
-			{
-				capital++;
-				if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
-				{
-					vowels++;
-				}
-				else
-				consonant++;
-			}
-			else if(c>='0'&&c<='9')
-			{
-				digit++;
-			}
-			else if(c==' ')
-			{
-				space++;
-			}
-			else
-				symbol++;
-		}
-		System.out.println("small"+small+" vowels"+vowels+"capital"+ capital+" consonants"+consonant+"digits "+digit+"symbols "+symbol+" space"+space);
+		String s=new String("hello,GOOD");
+		System.out.println(s.length());
+		System.out.println(s.toUpperCase());
+		System.out.println(s.toLowerCase());
+		System.out.println(s.equals("hello"));
+		System.out.println(s.charAt(3));
+		System.out.println(s.concat("my"));
+		System.out.println(s.indexOf('o'));
+		System.out.println(s.indexOf("hello"));
+		System.out.println(s.lastIndexOf('o'));
+		String []a=s.split(",");
+		for(String temp:a)
+		System.out.println(temp+"  split"); 
+		System.out.println(s.trim()+"  trim");
+		String o = "Java";
+char[] chars = o.toCharArray();
+for (char c : chars) {
+    System.out.println(c);
+}
+
+
+
+
+
+
+
 	}
-} 
-
-
-			
-			
+}
