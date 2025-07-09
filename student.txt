@@ -1,0 +1,15 @@
+class Student {
+    public static void main(String[] args) {
+        int m1=36,m2=70;
+        double total=m1+m2;
+        double percentage=total/200*100;
+        if(percentage>=35)
+        {
+        System.out.println("pass");
+        }
+        else
+        {
+            System.out.println("fail");
+        }
+    }
+}

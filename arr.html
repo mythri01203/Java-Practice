@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<\head>
+<body>
+<script>
+var obj={
+	name:'mythri',
+	roll:1,
+	section:'A',
+	grade:'A',
+	add:function()
+        {
+	console.log("i am add");
+	},
+	sub:function()
+	{
+	console.log("i am sub");
+	},
+	arr:[1,2,3,4]
+}
+	console.log(obj);
+	obj.sub();
+	console.log(obj.name+" "+obj.roll)
+	//obj.add();
+	for(let x in obj)
+	{
+	if(typeof(obj[x])=='function')
+	{
+	obj[x]();
+	}
+	else if(Array.isArray(obj[x]))
+	{
+	for(let y in obj[x]);
+	{
+	console.log(x+obj[x][y]);
+	}
+	}
+	else
+	console.log(x+":"+obj[x]);
+	}
+	var arr=[1,2,3,45,6,7];
+	var[num1,num2,num3,num4]=arr;
+	console.log(num1+" "+num2+" "+num3+" "+num4);
+	var obj={
+	name:'mythri',
+	roll:1,
+	section:'a',
+	
+	
+</script>
+</body>
+</html>
